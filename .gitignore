@@ -1,0 +1,18 @@
+sessions
+
+# Python venv
+.venv/
+
+# Environment secrets
+.env
+
+# Generated reports
+reports/*.html
+reports/*.csv
+reports/*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
