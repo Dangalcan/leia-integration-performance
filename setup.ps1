@@ -2,13 +2,13 @@
 # Creates venv, installs deps, copies .env.example if .env missing
 
 $ErrorActionPreference = "Stop"
-$venvPath = ".\.venv"
+$venvPath = ".\venv"
 
 Write-Host "Creating virtual environment..."
 if (-not (Test-Path $venvPath)) {
     python -m venv $venvPath
 } else {
-    Write-Host "  .venv already exists, skipping creation"
+    Write-Host "  venv already exists, skipping creation"
 }
 
 Write-Host "Installing dependencies..."
@@ -26,5 +26,5 @@ if (-not (Test-Path ".\.env")) {
 
 Write-Host ""
 Write-Host "Setup complete."
-Write-Host "Activate venv:  .\.venv\Scripts\Activate.ps1"
+Write-Host "Activate venv:  .\venv\Scripts\Activate.ps1"
 Write-Host "Run tests:      locust -f locust\locustfile.py"

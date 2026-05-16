@@ -2,6 +2,7 @@ sessions
 
 # Python venv
 .venv/
+venv/
 
 # Environment secrets
 .env
