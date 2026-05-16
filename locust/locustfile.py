@@ -81,7 +81,7 @@ def _run_preflight() -> None:
     try:
         resp = _requests.get(url, headers=headers, timeout=10)
         if resp.status_code == 200:
-            _log.info("Preflight passed (GET /api/v1/models → 200)")
+            _log.info("Preflight passed (GET /api/v1/models -> 200)")
         elif resp.status_code in (401, 403):
             _log.warning(
                 "Preflight: auth failed (%d) — check RUNNER_KEY",
