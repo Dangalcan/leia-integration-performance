@@ -1,0 +1,20 @@
+[2026-05-16 12:10:21,278] DESKTOP-4ABPE84/INFO/locust.main: Starting Locust 2.44.0
+[2026-05-16 12:10:21,279] DESKTOP-4ABPE84/INFO/leia-perf: Sessions loaded: 37 total — short=14  medium=16  long=3  adversarial=4
+[2026-05-16 12:10:21,279] DESKTOP-4ABPE84/INFO/leia-perf: Target: http://localhost:9000
+[2026-05-16 12:10:21,281] DESKTOP-4ABPE84/INFO/leia-perf: Provider: alma
+[2026-05-16 12:10:21,281] DESKTOP-4ABPE84/INFO/leia-perf: Think cap: 120s | Burst gap cap: 5000ms | Timeout: 60s | Retries: 2
+[2026-05-16 12:10:21,300] DESKTOP-4ABPE84/INFO/locust.main: Run time limit set to 900 seconds
+[2026-05-16 12:10:21,302] DESKTOP-4ABPE84/INFO/locust.runners: Ramping to 30 users at a rate of 3.00 per second
+[2026-05-16 12:10:30,353] DESKTOP-4ABPE84/INFO/locust.runners: All users spawned: {"RealisticMixedUser": 30} (30 total users)
+[2026-05-16 12:25:21,297] DESKTOP-4ABPE84/INFO/locust.main: --run-time limit reached, shutting down
+[2026-05-16 12:25:21,395] DESKTOP-4ABPE84/INFO/leia-perf.metrics: 
+=== AI Latency Summary (ms) ===
+[2026-05-16 12:25:21,395] DESKTOP-4ABPE84/INFO/leia-perf.metrics:   scenario                      n  P 50  P 90  P 99
+[2026-05-16 12:25:21,395] DESKTOP-4ABPE84/INFO/leia-perf.metrics:   mixed/adversarial            24     3956    21399    23396
+[2026-05-16 12:25:21,395] DESKTOP-4ABPE84/INFO/leia-perf.metrics:   mixed/long                  104    21411    26490    28397
+[2026-05-16 12:25:21,395] DESKTOP-4ABPE84/INFO/leia-perf.metrics:   mixed/medium                195    17408    23740    26849
+[2026-05-16 12:25:21,395] DESKTOP-4ABPE84/INFO/leia-perf.metrics:   mixed/short                  96    13789    22636    25227
+[2026-05-16 12:25:21,395] DESKTOP-4ABPE84/INFO/leia-perf.metrics: 
+[2026-05-16 12:25:21,397] DESKTOP-4ABPE84/INFO/leia-perf.metrics: AI latency summary exported to reports\ai_latency_summary.json
+[2026-05-16 12:25:21,436] DESKTOP-4ABPE84/INFO/locust.main: writing html report to file: reports/locust_report.html
+[2026-05-16 12:25:21,439] DESKTOP-4ABPE84/INFO/locust.main: Shutting down (exit code 0)
