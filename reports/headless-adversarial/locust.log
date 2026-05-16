@@ -1,0 +1,17 @@
+[2026-05-16 11:19:10,246] DESKTOP-4ABPE84/INFO/locust.main: Starting Locust 2.44.0
+[2026-05-16 11:19:10,249] DESKTOP-4ABPE84/INFO/leia-perf: Sessions loaded: 37 total — short=14  medium=16  long=3  adversarial=4
+[2026-05-16 11:19:10,249] DESKTOP-4ABPE84/INFO/leia-perf: Target: http://localhost:9000
+[2026-05-16 11:19:10,249] DESKTOP-4ABPE84/INFO/leia-perf: Provider: alma
+[2026-05-16 11:19:10,250] DESKTOP-4ABPE84/INFO/leia-perf: Think cap: 120s | Burst gap cap: 5000ms | Timeout: 60s | Retries: 2
+[2026-05-16 11:19:10,326] DESKTOP-4ABPE84/INFO/locust.main: Run time limit set to 600 seconds
+[2026-05-16 11:19:10,329] DESKTOP-4ABPE84/INFO/locust.runners: Ramping to 10 users at a rate of 2.00 per second
+[2026-05-16 11:19:14,357] DESKTOP-4ABPE84/INFO/locust.runners: All users spawned: {"AdversarialUser": 10} (10 total users)
+[2026-05-16 11:29:10,281] DESKTOP-4ABPE84/INFO/locust.main: --run-time limit reached, shutting down
+[2026-05-16 11:29:10,364] DESKTOP-4ABPE84/INFO/leia-perf.metrics: 
+=== AI Latency Summary (ms) ===
+[2026-05-16 11:29:10,364] DESKTOP-4ABPE84/INFO/leia-perf.metrics:   scenario                      n  P 50  P 90  P 99
+[2026-05-16 11:29:10,364] DESKTOP-4ABPE84/INFO/leia-perf.metrics:   adversarial                 152    10625    21962    25434
+[2026-05-16 11:29:10,364] DESKTOP-4ABPE84/INFO/leia-perf.metrics: 
+[2026-05-16 11:29:10,365] DESKTOP-4ABPE84/INFO/leia-perf.metrics: AI latency summary exported to reports\ai_latency_summary.json
+[2026-05-16 11:29:10,403] DESKTOP-4ABPE84/INFO/locust.main: writing html report to file: reports/locust_report.html
+[2026-05-16 11:29:10,407] DESKTOP-4ABPE84/INFO/locust.main: Shutting down (exit code 0)
