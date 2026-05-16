@@ -50,6 +50,18 @@ make headless-adversarial # 10 users, 10m — AdversarialUser
 make headless-mixed       # 30 users, 15m — RealisticMixedUser
 ```
 
+### PowerShell shortcuts (Windows)
+
+`make` is not available in PowerShell. Use `run.ps1` instead — same targets, same parameters:
+
+```powershell
+.\run.ps1                       # web UI
+.\run.ps1 headless-short
+.\run.ps1 headless-long
+.\run.ps1 headless-adversarial
+.\run.ps1 headless-mixed
+```
+
 ### Run a specific scenario
 ```bash
 locust -f locust/locustfile.py ShortConversationUser
@@ -180,6 +192,14 @@ Sessions loaded: 37 total — short=14  medium=16  long=3  adversarial=4
 ```bash
 make test    # run unit tests
 make lint    # ruff check
+```
+
+**Windows:**
+
+```powershell
+.\run.ps1 test
+.\run.ps1 lint
+.\run.ps1 clean
 ```
 
 Unit tests cover: percentile correctness, thread-safe metric accumulation, session classification, exchange building, config validation.
